@@ -1,12 +1,35 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(255, 228, 196), rgb(6, 142, 135), rgb(154, 189, 249));
+    background-attachment: fixed;
+}
+
 
 header,
 footer {
     background-color: #d9d9d9;
+
+}
+
+section {
+    background: white;
+    box-shadow: 5px 3px 0px rgba(38, 111, 140, 0.055);
+    width: 70vw;
+    padding: 10px;
 }
 
 footer {
     text-align: center;
-    padding: 30px 0;
+    padding: 10px 0;
+}
+
+.profile {
+    text-align: justify;
+    padding: 20px;
+    margin: 30px;
+}
+
+.profile > p {
+    margin-top: 40px;
 }
 
 p {
@@ -24,6 +47,18 @@ img {
     height: auto;
 }
 
+#qr-code {
+    height: 80px;
+    width: 80px;
+}
+
+.qr {
+    position: absolute;
+    display: inline-block;
+    width: max-content;
+    margin: 10px 0px 0px 1000px;
+}
+
 .carousel,
 .row {
     margin-bottom: 30px;
@@ -33,13 +68,24 @@ img {
     margin-top: 30px;
 }
 
-.carousel {
-    max-height: 400px;
-    overflow: hidden;
+
+#img-hover {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    display: inline-block;
 }
 
-.carousel img {
-    width: auto;
+#img-hover .second-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#img-hover:hover .second-img {
+    display: inline;
 }
 
 .btn-primary {
@@ -54,4 +100,66 @@ img {
 .card {
     float: left;
     margin: 15px;
+    color: black;
+}
+
+#card01 {
+    background-color: #FFE5B4;
+}
+
+#card02 {
+    background-color: #B5D6FF;
+}
+
+#card03 {
+    background-color: #DB9CFF;
+}
+
+#card04 {
+    background-color: #FFCAA8;
+}
+
+/*Icons in the accordion*/
+
+
+.icon-dev {
+    display: inline-block;
+    background: url(https://icons.iconarchive.com/icons/elegantthemes/beautiful-flat/16/dev-icon.png);
+    width: 16px;
+    height: 16px;
+}
+
+.icon-java{
+        display: inline-block;
+        background: url(https://icons.iconarchive.com/icons/papirus-team/papirus-apps/16/java-icon.png);
+        width: 16px;
+        height: 16px;
+}
+
+.icon-python {
+    display: inline-block;
+    background: url(https://icons.iconarchive.com/icons/papirus-team/papirus-apps/16/python-icon.png);
+    width: 16px;
+    height: 16px;
+}
+
+.icon-html5 {
+    display: inline-block;
+    background: url(https://icons.iconarchive.com/icons/cornmanthe3rd/plex/16/Other-html-5-icon.png);
+    width: 16px;
+    height: 16px;
+}
+
+.icon-css3 {
+    display: inline-block;
+    background: url(https://icons.iconarchive.com/icons/designbolts/cute-social-2014/16/CSS3-icon.png);
+    width: 16px;
+    height: 16px;
+}
+
+.icon-cyber {
+    display: inline-block;
+    background: url(https://icons.iconarchive.com/icons/icons8/windows-8/16/Security-Password-2-icon.png);
+    width: 16px;
+    height: 16px;
 }
