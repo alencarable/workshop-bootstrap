@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "workshop-bootstrap",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "workshop-bootstrap"
+	}
+}
